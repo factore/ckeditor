@@ -3,8 +3,8 @@ CKEDITOR.plugins.add('forge_assets', {
     var pluginName = 'forge_assets';
     editor.ui.addButton('ForgeAssets', {
       label: 'Add Images or Documents',
-      click: function() { $asset_drawer.load(editor); },
-      icon: '/javascripts/ckeditor/images/image_new.gif'
+      click: function() { FORGE.assetDrawer.load(editor); },
+      icon: '<%= asset_path('image_new.gif') %>'
     });
   }
 });
